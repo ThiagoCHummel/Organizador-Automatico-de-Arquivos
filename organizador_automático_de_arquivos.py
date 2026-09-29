@@ -48,3 +48,5 @@ try:
 
 except Exception as e:
     print(f"\033[1;31man error occurred \n{e}\033[0m")
+
+input("\nPress Enter to exit...")
