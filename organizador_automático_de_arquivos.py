@@ -5,7 +5,7 @@ import shutil
 
 try:
     # variaveis globais
-    local = input('digite o caminho a ser organizado: ') # C:/Users/p1kek/OneDrive/Documents/Testes
+    local = input('Enter the path to be organized: ') # C:/Users/p1kek/OneDrive/Documents/Testes
     archive = os.listdir(local)
 
 
@@ -33,7 +33,7 @@ try:
         # move o arquivo para a pasta correspondente
         if not os.path.exists(destination):
             shutil.move(original, destination)
-            print(f"Movido com sucesso: {file_name} -> {archive_type}/")
+            print(f"Successfully moved: {file_name} -> {archive_type}/")
 
 
     # varredura principal da pasta
